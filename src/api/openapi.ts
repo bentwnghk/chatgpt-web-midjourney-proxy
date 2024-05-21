@@ -528,6 +528,7 @@ const getModelMax=( model:string )=>{
         return 8;
     }else if( model.toLowerCase().includes('mixtral') ){
         return 32;
+    }
 
     return max;
 }
