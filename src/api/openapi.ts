@@ -503,26 +503,31 @@ const getModelMax=( model:string )=>{
     model= model.toLowerCase();
     if( model.indexOf('8k')>-1  ){
         return 8;
-    }else if( model.indexOf('16k')>-1 || model=='gpt-3.5-turbo-1106' || model=='gpt-3.5-turbo-0125' ){
+    }else if( model.indexOf('16k')>-1 || model=='gpt-3.5-turbo' || model=='gpt-3.5-turbo-1106' || model=='gpt-3.5-turbo-0125' ){
         return 16;
     }else if( model.indexOf('32k')>-1  ){
         return 32;
-    }else if( model.indexOf('gpt-4-turbo')>-1||  model.indexOf('gpt-4o')>-1 ){
-        return 128; 
+    }else if( model.indexOf('gpt-4-turbo')>-1 || model.indexOf('gpt-4o')>-1 ){
+        return 128;
     }else if( model.indexOf('64k')>-1  ){
         return 64;
     }else if( model.indexOf('128k')>-1 
     || model=='gpt-4-1106-preview' 
     || model=='gpt-4-0125-preview' 
     || model=='gpt-4-vision-preview' ){
-        return 128; 
+        return 128;
     }else if( model.indexOf('gpt-4')>-1  ){  
         max=8;
     }else if( model.toLowerCase().includes('claude-3') ){
         //options.maxModelTokens = 120*1024;
         //options.maxResponseTokens = 4096
-        return 120;
-    }
+        return 200;
+    }else if( model.toLowerCase().includes('gemini-1.5') ){
+        return 1024;
+    }else if( model.toLowerCase().includes('llama3') ){
+        return 8;
+    }else if( model.toLowerCase().includes('mixtral') ){
+        return 32;
 
     return max;
 }

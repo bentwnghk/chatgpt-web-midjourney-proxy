@@ -68,7 +68,7 @@ function selectFile(input:any){
    upFile( file );  
 }
 
-const myToken =ref({remain:0,modelTokens:'4k'});
+const myToken =ref({remain:0,modelTokens:'8k'});
 const funt = async ()=>{
     const d = await countTokens( dataSources.value, mvalue.value ,chatStore.active??1002 ) 
     myToken.value=d ;
