@@ -527,9 +527,9 @@ const getModelMax=( model:string )=>{
         return 200;
     }else if( model.toLowerCase().includes('gemini-1.5') ){
         return 1024;
-    }else if( model.toLowerCase().includes('llama3') ){
+    }else if( model.toLowerCase().includes('llama3') || model.toLowerCase().includes('qwen-turbo') || model.toLowerCase().includes('qwen-max') ){
         return 8;
-    }else if( model.toLowerCase().includes('mixtral') ){
+    }else if( model.toLowerCase().includes('mixtral') || model.toLowerCase().includes('qwen-plus') ){
         return 32;
     }
 
