@@ -6,6 +6,7 @@ import { useBasicLayout } from '@/hooks/useBasicLayout'
 import {NModal} from "naive-ui"
 import aiModel from "@/views/mj/aiModel.vue"
 import { chatSetting, mlog } from '@/api'
+import { debounce } from '@/utils/functions/debounce'
 
 const { isMobile } = useBasicLayout()
 
@@ -50,11 +51,12 @@ const chatSet = new chatSetting( uuid==null?1002:uuid);
 const nGptStore = ref()  ;
 nGptStore.value=  chatSet.getGptConfig() ;
 const st = ref({isShow:false});
-watch(()=>gptConfigStore.myData,()=>{
-  mlog("toMyuid16","watch gptConfigStore.myData "  )
+//导致卡死的原因 当删除时触发 切换 uuid 这个地方会删除的uuid 跟新uuid 一直却换
+watch(()=>gptConfigStore.myData,debounce( ()=>{
+  mlog("toMyuid19","watch gptConfigStore.myData ",  chatStore.active  )
   nGptStore.value=  chatSet.getGptConfig() 
-}, {deep:true})
-watch(()=>homeStore.myData.act,(n)=> n=='saveChat' && (nGptStore.value=  chatSet.getGptConfig() ), {deep:true})
+},600 ), {deep:true})
+watch(()=>homeStore.myData.act,debounce( (n)=> n=='saveChat' && (nGptStore.value=  chatSet.getGptConfig() ),600), {deep:true})
 </script>
 
 <template>
