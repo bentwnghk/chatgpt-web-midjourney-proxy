@@ -81,7 +81,7 @@ const  isShow = computed(()=>{
   <NSpin :show="loading">
     <div class="p-4 space-y-4">
       <h2 class="text-xl font-bold">
-        Mr.🆖 ChatGPT+ v{{ pkg.version }}
+        Mr.🆖 AI Creator v{{ pkg.version }}
         <a class="text-red-500" href="https://mr5drive.com/" target="_blank" v-if=" isShow  "> ({{ $t('mj.findVersion') }} {{ st.lastVersion }})</a>
         <a class="text-gray-500" href="https://mr5drive.com/" target="_blank" v-else-if="st.lastVersion"> ({{ $t('mj.yesLastVersion') }})</a>
       </h2>

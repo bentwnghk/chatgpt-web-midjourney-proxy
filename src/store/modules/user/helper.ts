@@ -17,7 +17,7 @@ export function defaultSetting(): UserState {
     userInfo: {
       avatar: 'https://raw.githubusercontent.com/bentwng79/chatgpt-web/main/src/assets/avatar.jpg',
       name:  'User',//'AI绘图'
-      description: 'Mr.🆖 ChatGPT+',
+      description: 'Mr.🆖 AI Creator',
     },
   }
 }
