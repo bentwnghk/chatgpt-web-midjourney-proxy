@@ -507,13 +507,13 @@ export const countTokens= async ( dataSources:Chat.Chat[], input:string ,uuid:nu
 const getModelMax=( model:string )=>{
     let max=4;
     model= model.toLowerCase();
-    if( model.indexOf('8k')>-1  ){
+    if( model.indexOf('8k')>-1 || model=='moonshot-v1-8k' ){
         return 8;
-    }else if( model.indexOf('16k')>-1 || model=='gpt-3.5-turbo' || model=='gpt-3.5-turbo-1106' || model=='gpt-3.5-turbo-0125' ){
+    }else if( model.indexOf('16k')>-1 || model=='gpt-3.5-turbo' || model=='gpt-3.5-turbo-1106' || model=='gpt-3.5-turbo-0125' || model=='deepseek-coder' || model=='yi-spark' || model=='yi-medium' || model=='yi-large-turbo' ){
         return 16;
-    }else if( model.indexOf('32k')>-1  ){
+    }else if( model.indexOf('32k')>-1 || model=='deepseek-chat' || model=='moonshot-v1-32k' ){
         return 32;
-    }else if( model.indexOf('gpt-4-turbo')>-1 || model.indexOf('gpt-4o')>-1 ){
+    }else if( model.indexOf('gpt-4-turbo')>-1 || model.indexOf('gpt-4o')>-1  || model=='moonshot-v1-128k' ){
         return 128;
     }else if( model.indexOf('64k')>-1  ){
         return 64;
@@ -524,7 +524,7 @@ const getModelMax=( model:string )=>{
         return 128;
     }else if( model.indexOf('gpt-4')>-1  ){  
         max=8;
-    }else if( model.toLowerCase().includes('claude-3') ){
+    }else if( model.toLowerCase().includes('claude-3') || model.toLowerCase().includes('yi-medium-200k') ){
         //options.maxModelTokens = 120*1024;
         //options.maxResponseTokens = 4096
         return 200;
