@@ -518,7 +518,7 @@ const getModelMax=( model:string )=>{
     }else if( model.indexOf('64k')>-1  ){
         return 64;
     }else if( model.indexOf('128k')>-1 
-    || model=='moonshot-v1-128k' 
+    || model.toLowerCase().includes('moonshot-v1-128k') 
     || model=='gpt-4-1106-preview' 
     || model=='gpt-4-0125-preview' 
     || model=='gpt-4-vision-preview' ){
