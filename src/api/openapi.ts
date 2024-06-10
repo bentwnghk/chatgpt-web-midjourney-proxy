@@ -513,7 +513,7 @@ const getModelMax=( model:string )=>{
         return 16;
     }else if( model.indexOf('32k')>-1 || model=='deepseek-chat' || model=='moonshot-v1-32k' ){
         return 32;
-    }else if( model.indexOf('gpt-4-turbo')>-1 || model.indexOf('gpt-4o')>-1  || model=='moonshot-v1-128k' ){
+    }else if( model.indexOf('gpt-4-turbo')>-1 || model.indexOf('gpt-4o')>-1 || model=='moonshot-v1-128k' ){
         return 128;
     }else if( model.indexOf('64k')>-1  ){
         return 64;
