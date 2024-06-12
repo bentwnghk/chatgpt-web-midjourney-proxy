@@ -505,7 +505,7 @@ export const countTokens= async ( dataSources:Chat.Chat[], input:string ,uuid:nu
     return rz ;
 }
 const getModelMax=( model:string )=>{
-    let max=4;
+    let max=8;
     model= model.toLowerCase();
     if( model.indexOf('8k')>-1 || model=='moonshot-v1-8k' ){
         return 8;
@@ -513,12 +513,11 @@ const getModelMax=( model:string )=>{
         return 16;
     }else if( model.indexOf('32k')>-1 || model=='deepseek-chat' || model=='moonshot-v1-32k' ){
         return 32;
-    }else if( model.indexOf('gpt-4-turbo')>-1 || model.indexOf('gpt-4o')>-1 ){
-        return 128;
     }else if( model.indexOf('64k')>-1  ){
         return 64;
+    }else if( model.indexOf('gpt-4-turbo')>-1 || model.indexOf('gpt-4o')>-1 || model.indexOf('glm-4')>-1 ){
+        return 128;
     }else if( model.indexOf('128k')>-1 
-    || model.toLowerCase().includes('moonshot-v1-128k') 
     || model=='gpt-4-1106-preview' 
     || model=='gpt-4-0125-preview' 
     || model=='gpt-4-vision-preview' ){
