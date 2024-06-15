@@ -102,7 +102,7 @@ export default {
     "setOpenKeyPlaceholder": "使用自定義 OpenAI Key 繞過密碼訪問限制",
     "setMj": "Midjourney 相關",
     "setMjUrl": "Midjourney接口地址:",
-    "setMjKeyPlaceholder": "使用自定義 Api Secret 繞過密碼訪問限制",
+    "setMjKeyPlaceholder": "使用自定義 API Secret 繞過密碼訪問限制",
     "setUploader": "上傳相關",
     "setUploaderUrl": "上傳地址:",
     "setBtSave": "保存",

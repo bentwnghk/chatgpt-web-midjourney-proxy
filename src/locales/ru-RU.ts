@@ -100,7 +100,7 @@ export default {
     "setOpenKeyPlaceholder": "Используйте свой собственный ключ OpenAI для обхода ограничений доступа по паролю",
     "setMj": "Midjourney связанный",
     "setMjUrl": "Адрес интерфейса Midjourney:",
-    "setMjKeyPlaceholder": "Используйте свой собственный Api Secret для обхода ограничений доступа по паролю",
+    "setMjKeyPlaceholder": "Используйте свой собственный API Secret для обхода ограничений доступа по паролю",
     "setUploader": "Связанный с загрузкой",
     "setUploaderUrl": "Адрес загрузки:",
     "setBtSave": "Сохранить",

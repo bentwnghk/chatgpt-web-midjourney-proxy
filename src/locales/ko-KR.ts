@@ -100,7 +100,7 @@ export default {
     ,"setOpenKeyPlaceholder": "비밀번호 액세스 제한을 우회하기 위해 사용자 지정 OpenAI 키 사용"
     ,"setMj": "Midjourney 관련"
     ,"setMjUrl": "Midjourney 인터페이스 주소:"
-    ,"setMjKeyPlaceholder": "비밀번호 액세스 제한을 우회하기 위해 사용자 지정 Api Secret 사용"
+    ,"setMjKeyPlaceholder": "비밀번호 액세스 제한을 우회하기 위해 사용자 지정 API Secret 사용"
     ,"setUploader": "업로드 관련"
     ,"setUploaderUrl": "업로드 주소:"
     ,"setBtSave": "저장"

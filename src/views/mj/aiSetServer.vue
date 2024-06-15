@@ -57,7 +57,7 @@ watch(() => gptServerStore.myData.OPENAI_API_KEY , (n)=>{
 <section class="mb-4 flex justify-between items-center"  >
     <n-input  @blur="blurClean" type="password"  :placeholder="$t('mj.setOpenKeyPlaceholder')" show-password-on="click" v-model:value="gptServerStore.myData.OPENAI_API_KEY" clearable>
       <template #prefix>
-        <span class="text-[var(--n-tab-text-color-active)]">OpenAI Api Key:</span>
+        <span class="text-[var(--n-tab-text-color-active)]">OpenAI API Key:</span>
       </template>
     </n-input>
  </section>
@@ -91,7 +91,7 @@ watch(() => gptServerStore.myData.OPENAI_API_KEY , (n)=>{
 <section class="mb-4 flex justify-between items-center"  >
     <n-input type="password"  :placeholder="$t('mj.setMjKeyPlaceholder') " show-password-on="click" v-model:value="gptServerStore.myData.MJ_API_SECRET" clearable>
       <template #prefix>
-        <span class="text-[var(--n-tab-text-color-active)]">Midjourney Api Secret:</span>
+        <span class="text-[var(--n-tab-text-color-active)]">Midjourney API Secret:</span>
       </template>
     </n-input>
  </section>

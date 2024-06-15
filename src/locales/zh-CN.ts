@@ -199,7 +199,7 @@ export default {
     ,setOpenKeyPlaceholder:'使用自定义 OpenAI Key 绕过密码访问限制'
     ,setMj:'Midjourney 相关'
     ,setMjUrl:'Midjourney接口地址:'
-    ,setMjKeyPlaceholder:'使用自定义 Api Secret 绕过密码访问限制'
+    ,setMjKeyPlaceholder:'使用自定义 API Secret 绕过密码访问限制'
     ,setUploader:'上传相关'
     ,setUploaderUrl:'上传地址:'
     ,setBtSave:'保存'
@@ -246,7 +246,7 @@ export default {
 
     ,totalUsage:'已购总额'
     ,disableGpt4:'已禁用GPT4'
-    ,setTextInfo:'OpenAi Api Key 错误，点击这里重新'
+    ,setTextInfo:'OpenAi API Key 错误，点击这里重新'
 
     ,attr1:'附'
     ,ulink:'原图链接'

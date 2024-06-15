@@ -98,7 +98,7 @@ export default {
     "setOpenKeyPlaceholder": "Sử dụng khóa OpenAI tùy chỉnh để bỏ qua hạn chế mật khẩu",
     "setMj": "Midjourney liên quan",
     "setMjUrl": "Địa chỉ giao diện Midjourney:",
-    "setMjKeyPlaceholder": "Sử dụng Khóa Api Secret tùy chỉnh để bỏ qua hạn chế mật khẩu",
+    "setMjKeyPlaceholder": "Sử dụng Khóa API Secret tùy chỉnh để bỏ qua hạn chế mật khẩu",
     "setUploader": "Tải lên liên quan",
     "setUploaderUrl": "Địa chỉ tải lên:",
     "setBtSave": "Lưu",

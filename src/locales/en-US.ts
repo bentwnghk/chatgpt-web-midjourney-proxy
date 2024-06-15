@@ -103,7 +103,7 @@ export default {
     "setOpenKeyPlaceholder": "Use custom OpenAI Key to bypass password access restrictions",
     "setMj": "Midjourney Related",
     "setMjUrl": "Midjourney API Address:",
-    "setMjKeyPlaceholder": "Use custom Api Secret to bypass password access restrictions",
+    "setMjKeyPlaceholder": "Use custom API Secret to bypass password access restrictions",
     "setUploader": "Upload Related",
     "setUploaderUrl": "Upload Address:",
     "setBtSave": "Save",

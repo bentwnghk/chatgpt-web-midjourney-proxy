@@ -100,7 +100,7 @@ export default {
         "setOpenKeyPlaceholder": "Parola erişim kısıtlamalarını atlamak için özel OpenAI Anahtarı kullan",
         "setMj": "Midjourney İlişkilendirilmiş",
         "setMjUrl": "Midjourney API Adresi:",
-        "setMjKeyPlaceholder": "Parola erişim kısıtlamalarını atlamak için özel Api Secret kullan",
+        "setMjKeyPlaceholder": "Parola erişim kısıtlamalarını atlamak için özel API Secret kullan",
         "setUploader": "Yükleme İlişkilendirilmiş",
         "setUploaderUrl": "Yükleme Adresi:",
         "setBtSave": "Kaydet",
