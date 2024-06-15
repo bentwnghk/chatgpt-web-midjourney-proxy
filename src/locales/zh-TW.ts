@@ -74,6 +74,7 @@ export default {
     httpsProxy: 'HTTPS Proxy',
     balance: 'API Credit 餘額',
     monthlyUsage: '本月使用量',
+    getKey: '取得 API 金鑰',
   },
   store: {
     siderButton: '提示詞商店',

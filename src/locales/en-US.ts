@@ -74,6 +74,7 @@ export default {
     httpsProxy: 'HTTPS Proxy',
     balance: 'API Balance',
     monthlyUsage: 'Monthly Usage',
+    getKey: 'Get API Key',
   },
   store: {
     siderButton: 'Prompt Store',

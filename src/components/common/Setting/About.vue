@@ -41,7 +41,8 @@ async function fetchConfig() {
         "reverseProxy": "-",
         "timeoutMs": 100000,
         "socksProxy": "-",
-        "httpsProxy": "-", } ;
+        "httpsProxy": "-",
+        "getKeyUrl": "https://api.mister5.net", } ;
 
   }
   finally {
@@ -88,12 +89,12 @@ const  isShow = computed(()=>{
       <div class="p-2 space-y-2 rounded-md bg-neutral-100 dark:bg-neutral-700">
         <p v-html="$t('mj.infoStar')"></p>
       </div>
-      <p>
+      <p class=" flex items-center justify-between">
         <div>
         {{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}
         </div>
         <div>
-        
+        {{ $t("setting.getKey") }}：<a class="text-gray-500" href="https://api.mister5.net" target="_blank">{{ config?.getKeyUrl ?? '-' }}</a>
         </div>
       </p>
       <p v-if="isChatGPTAPI" class=" flex items-center justify-between">
