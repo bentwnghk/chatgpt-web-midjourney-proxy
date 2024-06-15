@@ -73,7 +73,7 @@ export default {
     socks: 'Socks',
     httpsProxy: 'HTTPS Proxy',
     balance: '当前余额',
-    monthlyUsage: '本月用量(美元)',
+    monthlyUsage: '本月用量 (美元)',
     getKey: '取得 API Key',
   },
   store: {
