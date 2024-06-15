@@ -72,8 +72,8 @@ export default {
     timeout: 'Timeout',
     socks: 'Socks',
     httpsProxy: 'HTTPS Proxy',
-    balance: 'API Balance',
-    monthlyUsage: 'Monthly Usage',
+    balance: 'Current Balance',
+    monthlyUsage: 'Current Usage (US$)',
     getKey: 'Get API Key',
   },
   store: {
@@ -146,7 +146,7 @@ export default {
     "failOcr": "Recognition failed",
     "remain": "Remain:",
 
-  "totalUsage": "Total subscription amount",
+  "totalUsage": "Total Purchased",
   "disableGpt4": "GPT4 disabled",
   "setTextInfo": "OpenAI API Key error, click here to retry",
 
@@ -170,7 +170,7 @@ export default {
 
   "findVersion": "Discover updated version",
   "yesLastVersion": "Already on the latest version",
-  "infoStar": 'Artificial intelligence English learning tool powered by Mr.🆖 AI',
+  "infoStar": 'AI creativity tool powered by Mr.🆖 AI',
   "setBtSaveChat": "Save chat only",
   "setBtSaveSys": "Save to system",
   "wsrvClose": "Close wsrv",

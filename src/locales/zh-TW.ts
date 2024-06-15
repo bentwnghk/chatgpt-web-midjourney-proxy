@@ -72,9 +72,9 @@ export default {
     timeout: '逾時',
     socks: 'Socks',
     httpsProxy: 'HTTPS Proxy',
-    balance: 'API Credit 餘額',
-    monthlyUsage: '本月使用量',
-    getKey: '取得 API 金鑰',
+    balance: '當前餘額',
+    monthlyUsage: '本月用量(美元)',
+    getKey: '取得 API Key',
   },
   store: {
     siderButton: '提示詞商店',
@@ -144,7 +144,7 @@ export default {
     "failOcr": "識別失敗",
     "remain": "餘:",
 
-    "totalUsage": "訂閱總額",
+    "totalUsage": "已購總額",
     "disableGpt4": "已禁用GPT4",
     "setTextInfo": "OpenAI API Key 錯誤，點擊這裡重新",
 
@@ -167,7 +167,7 @@ export default {
     "mSent": "發送",
     "findVersion": "發現更新版本",
     "yesLastVersion": "已是最新版本",
-    "infoStar": "由 Mr.🆖 AI 驅動的人工智能英語學習利器",
+    "infoStar": "由 Mr.🆖 AI 驅動的人工智能創作工具",
     "setBtSaveChat": "僅保存對話",
     "setBtSaveSys": "保存至系統",
     "wsrvClose": "關閉 wsrv",

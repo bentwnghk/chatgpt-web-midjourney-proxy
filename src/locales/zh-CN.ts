@@ -72,9 +72,9 @@ export default {
     timeout: '超时',
     socks: 'Socks',
     httpsProxy: 'HTTPS Proxy',
-    balance: 'API余额',
-    monthlyUsage: '本月使用量',
-    getKey: '取得 API 金钥',
+    balance: '当前余额',
+    monthlyUsage: '本月用量(美元)',
+    getKey: '取得 API Key',
   },
   store: {
     siderButton: '提示词商店',
@@ -244,7 +244,7 @@ export default {
     ,failOcr:'识别失败'
     ,remain:'剩:'
 
-    ,totalUsage:'订阅总额'
+    ,totalUsage:'已购总额'
     ,disableGpt4:'已禁用GPT4'
     ,setTextInfo:'OpenAi Api Key 错误，点击这里重新'
 
@@ -268,7 +268,7 @@ export default {
 
     ,findVersion:'发现更新版本'
     ,yesLastVersion:'已是最新版本'
-    ,infoStar:'由 Mr.🆖 AI 驱动的人工智能英语学习利器'
+    ,infoStar:'由 Mr.🆖 AI 驱动的人工智能创作工具'
     ,setBtSaveChat:'仅保存会话'
     ,setBtSaveSys: '保存至系统'
 
