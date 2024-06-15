@@ -88,7 +88,14 @@ const  isShow = computed(()=>{
       <div class="p-2 space-y-2 rounded-md bg-neutral-100 dark:bg-neutral-700">
         <p v-html="$t('mj.infoStar')"></p>
       </div>
-      <p>{{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}</p>
+      <p>
+        <div>
+        {{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}
+        </div>
+        <div>
+        
+        </div>
+      </p>
       <p v-if="isChatGPTAPI" class=" flex items-center justify-between">
         <div>
         {{ $t("setting.monthlyUsage") }}：{{ config?.usage ?? '-' }}
