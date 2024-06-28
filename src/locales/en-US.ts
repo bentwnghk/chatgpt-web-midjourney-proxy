@@ -418,7 +418,7 @@ export default {
   }
    ,video: {
     menu: "Videos",
-    menuinfo: "Luam and other video generate",
+    menuinfo: "Luma and other video generate",
     descpls: "Video generate description",
     lumaabout: "About Luma",
     lumaserver: "Luma API endpoint",
