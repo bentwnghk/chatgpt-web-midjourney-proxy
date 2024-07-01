@@ -430,7 +430,12 @@ export default {
     plsInput: "Please input content!",
     submitSuccess: "Submitted successfully!",
     process: "Video generating...",
-    repeat: "Get again"
+    repeat: "Get again",
+    pending: 'Status: Queued',
+    processing: 'Status: Processing',
+    download: 'Download',
+    extend: 'Extend'
+
   }
 
 
