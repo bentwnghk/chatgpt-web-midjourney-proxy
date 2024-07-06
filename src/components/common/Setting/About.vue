@@ -42,7 +42,7 @@ async function fetchConfig() {
         "timeoutMs": 100000,
         "socksProxy": "-",
         "httpsProxy": "-",
-        "getKeyUrl": "https://api.mister5.net", } ;
+        "getKeyUrl": "https://api.mr5ai.com", } ;
 
   }
   finally {
@@ -94,7 +94,7 @@ const  isShow = computed(()=>{
         {{ $t("setting.api") }}：{{ config?.apiModel ?? '-' }}
         </div>
         <div>
-        {{ $t("setting.getKey") }}：<a class="text-gray-500" href="https://api.mister5.net" target="_blank">{{ config?.getKeyUrl ?? '-' }}</a>
+        {{ $t("setting.getKey") }}：<a class="text-gray-500" href="https://api.mr5ai.com" target="_blank">{{ config?.getKeyUrl ?? '-' }}</a>
         </div>
       </p>
       <p v-if="isChatGPTAPI" class=" flex items-center justify-between">
