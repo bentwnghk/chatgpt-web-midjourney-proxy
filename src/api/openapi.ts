@@ -518,16 +518,16 @@ export const countTokens= async ( dataSources:Chat.Chat[], input:string ,uuid:nu
 }
 const getModelMax=( model:string )=>{
     let max=8;
-    model= model.toLowerCase();
+    // model= model.toLowerCase();
     if( model.indexOf('8k')>-1 || model=='moonshot-v1-8k' ){
         return 8;
-    }else if( model.indexOf('16k')>-1 || model=='gpt-3.5-turbo' || model=='gpt-3.5-turbo-1106' || model=='gpt-3.5-turbo-0125' || model=='deepseek-coder' || model=='yi-spark' || model=='yi-medium' || model=='yi-large-turbo' ){
+    }else if( model.indexOf('16k')>-1 || model=='gpt-3.5-turbo' || model=='gpt-3.5-turbo-1106' || model=='gpt-3.5-turbo-0125' || model=='yi-spark' || model=='yi-medium' || model=='yi-large-turbo' ){
         return 16;
-    }else if( model.indexOf('32k')>-1 || model=='deepseek-chat' || model=='moonshot-v1-32k' ){
+    }else if( model.indexOf('32k')>-1 || model=='moonshot-v1-32k' ){
         return 32;
     }else if( model.indexOf('64k')>-1  ){
         return 64;
-    }else if( model.indexOf('gpt-4-turbo')>-1 || model.indexOf('gpt-4o')>-1 || model.indexOf('ERNIE-Speed-128K')>-1 || model.indexOf('glm-4')>-1 ){
+    }else if( model.indexOf('gpt-4-turbo')>-1 || model.indexOf('gpt-4o')>-1 || model=='deepseek-chat' || model=='deepseek-coder' || model=='ERNIE-Speed-128K' || model=='ERNIE-3.5-128K' || model.indexOf('glm-4')>-1 ){
         return 128;
     }else if( model.indexOf('128k')>-1 
     || model=='gpt-4-1106-preview' 
