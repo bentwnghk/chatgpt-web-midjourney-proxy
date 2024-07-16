@@ -37,7 +37,7 @@ async function fetchConfig() {
     config.value= {usage:dd.usage?`${dd.usage}`:'-'
       ,remaining:dd.remaining?`${dd.remaining}`:'-'
       ,hard_limit_usd:dd.hard_limit_usd?`${dd.hard_limit_usd}`:'-'
-      , "apiModel": "Mr.🆖 AI API",
+      , "apiModel": "Mr.🆖 AI Hub",
         "reverseProxy": "-",
         "timeoutMs": 100000,
         "socksProxy": "-",
