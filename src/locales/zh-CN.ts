@@ -370,6 +370,7 @@ export default {
 		},
 		versionList: {
 			mjV6: "MJ V6",
+			mjV61: "MJ V6.1",
 			mjV52: "MJ V5.2",
 			mjV51: "MJ V5.1",
 			nijiV6: "Niji V6",
@@ -454,6 +455,7 @@ export default {
     nosup:'暂不支持',
     rwgen2:'版本: Gen-2, 价格实惠',
     rwgen3:'版本: Gen-3 Alpha',
+    rwgen3fast:'版本: Gen-3 Alpha Fast',
 
     repeat2:'过期.重新获取',
 
