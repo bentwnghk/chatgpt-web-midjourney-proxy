@@ -27,10 +27,10 @@ const timeoutMs: number = !isNaN(+process.env.TIMEOUT_MS) ? +process.env.TIMEOUT
 const disableDebug: boolean = process.env.OPENAI_API_DISABLE_DEBUG === 'true'
 
 let apiModel: ApiModel
-const model = isNotEmptyString(process.env.OPENAI_API_MODEL) ? process.env.OPENAI_API_MODEL : 'gpt-3.5-turbo'
+const model = isNotEmptyString(process.env.OPENAI_API_MODEL) ? process.env.OPENAI_API_MODEL : 'gpt-4o-mini'
 
 if (!isNotEmptyString(process.env.OPENAI_API_KEY) && !isNotEmptyString(process.env.OPENAI_ACCESS_TOKEN)){
-  process.env.OPENAI_API_BASE_URL="https://api.openai.com"
+  process.env.OPENAI_API_BASE_URL="https://api.mr5ai.com"
   process.env.OPENAI_API_KEY="sk-xxx"
 }
   //throw new Error('Missing OPENAI_API_KEY or OPENAI_ACCESS_TOKEN environment variable')
@@ -136,7 +136,7 @@ async function fetchUsage() {
 
   const API_BASE_URL = isNotEmptyString(OPENAI_API_BASE_URL)
     ? OPENAI_API_BASE_URL
-    : 'https://api.openai.com'
+    : 'https://api.mr5ai.com'
 
   const [startDate, endDate] = formatDate()
 
