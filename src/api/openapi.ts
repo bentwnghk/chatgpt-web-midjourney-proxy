@@ -615,7 +615,7 @@ const getModelMax=( model:string )=>{
         return 32;
     }else if( model.indexOf('gpt-4-turbo')>-1||  model.indexOf('gpt-4o')>-1 ||   model.indexOf('o1-')>-1){
         return 128; 
-    }else if( model.indexOf('64k')>-1  ){
+    }else if( model.indexOf('64k')>-1 || model.indexOf('deepseek')>-1 ){
         return 64;
     }else if( model.indexOf('gpt-4-turbo')>-1 || model.indexOf('gpt-4o')>-1 || model.indexOf('o1-')>-1 || model=='deepseek-chat' || model=='deepseek-coder' || model=='ERNIE-Speed-128K' || model=='ERNIE-3.5-128K' || model.indexOf('glm-4')>-1 ){
         return 128;
