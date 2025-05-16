@@ -18,7 +18,8 @@ const vf=[{s:'width: 100%; height: 100%;',label:'1:1',value:'1:1'}
  ];
 
  const mvOption= [
-{label:'Verion: V4',value: 'v4'}
+{label:'Verion: V4.5',value: 'v4.5'}
+,{label:'Verion: V4',value: 'v4'}
  ,{label:'Verion: V3.5',value: 'v3.5'}
 // ,{label:'Verion: V3',value: 'v3'}
 // ,{label:'Verion: v2.5',value: 'v2.5'}
@@ -47,7 +48,7 @@ const qualityOption= [
 const durationOptions=[ {label:t('mj.duration')+':5s',value:5},{label:t('mj.duration')+':8s',value:8}]
 
 
-const f= ref({pe_index:-1, style:null, prompt:'',quality:'360p',negative_prompt:'',image:'',image_tail:'',aspect_ratio:'1:1',model:'v4', duration:5,motion_mode:'normal'});
+const f= ref({pe_index:-1, style:null, prompt:'',quality:'360p',negative_prompt:'',image:'',image_tail:'',aspect_ratio:'1:1',model:'v4.5', duration:5,motion_mode:'normal'});
 const st= ref({isLoading:false});
 const fsRef= ref() ; 
 const fsRef2= ref() ; 
